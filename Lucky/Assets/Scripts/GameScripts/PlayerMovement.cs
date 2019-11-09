@@ -53,6 +53,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+
+        if(other.gameObject.CompareTag("Axe"))
+        {
+            Destroy(other.gameObject);
+        }
     }
     
     void FlipPlayer()
