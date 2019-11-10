@@ -45,12 +45,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Rat.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\OpenScene.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\StartScreen.cs" />
-     <Compile Include="Assets\Sprites\KillPlayer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -108,6 +109,9 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -132,17 +136,14 @@
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
