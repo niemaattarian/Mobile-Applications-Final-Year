@@ -44,7 +44,8 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
+  <ItemGroup>     <Compile Include="Assets\EnemyGFX.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
      <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerMovement.cs" />
@@ -327,6 +328,9 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>/home/niema/Documents/S1/MAD3/Project/Lucky/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -673,6 +677,20 @@
  <Reference Include="mscorlib">
  <HintPath>/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{11B706E5-CC21-A5B0-C69A-7BB2AC684F78}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{83CA063E-2A0B-A753-8BDE-8F804E20894F}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{97235E7D-D7BC-E9B6-2C18-5E47FBE99D3F}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
