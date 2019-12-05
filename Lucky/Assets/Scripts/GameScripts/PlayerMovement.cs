@@ -16,8 +16,6 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-    
-
     void PlayerMove()
     {
         //Controls
@@ -64,5 +62,13 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
+
+    // void PlayerHealth()
+    // {
+    //         if(Health.playerHealth == 0)
+    //         {
+    //             transform.position = spawnPoint.position;
+    //         }
+    // }
 
 }

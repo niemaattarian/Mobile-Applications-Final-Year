@@ -45,6 +45,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\EnemyGFX.cs" />
+     <Compile Include="Assets\KeyPressScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
      <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PauseMenu.cs" />
