@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     private bool facingRight = true;
     public int playerJumpPower = 1250;
     private float moveX;
-
     // Sprite rendering
     private SpriteRenderer renderer;
     private Sprite playerAxe;
@@ -22,8 +21,6 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerMove()
     {
-        // Player Walking sounds
- //       PlayerSoundScript.PlaySound ("PlayerWalk");
         //Controls
         moveX = Input.GetAxis("Horizontal");
 
@@ -39,14 +36,13 @@ public class PlayerMovement : MonoBehaviour
         //Animation
         //Player Direction
         Vector3 playerScale = transform.localScale;
-        if (moveX < 0.0f && facingRight == false)
+        
+        if (Input.GetAxis("Horizontal") < 0)
         {
-            
             playerScale.x = -0.9f;
         }
-        else if (moveX > 0.0f && facingRight == true)
+        else if (Input.GetAxis("Horizontal") > 0)
         {
-            
             playerScale.x = 0.9f;
         }
         transform.localScale = playerScale;
@@ -69,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
             PlayerSoundScript.PlaySound ("EnergyPower");
             // Destroys the object once taken
             Destroy(other.gameObject);
+            // Changes player speed
+            playerJumpPower = 1400;
             // Changes the color of the player to signify the power up change
             GetComponent<SpriteRenderer>().color = Color.yellow;
             // Reset Player
@@ -90,25 +88,15 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
-    
-    // void PlayerHealth()
-    // {
-    //         if(Health.playerHealth == 0)
-    //         {
-    //             transform.position = spawnPoint.position;
-    //         }
-    // }
-
+  
     // Adapted from https://www.youtube.com/watch?v=0BrltbzgTYo
     private IEnumerator ResetPower()
     {
         // This waits 10 seconds before power up is gone
         yield return new WaitForSeconds(6);
-        /* ====================== TODO ==========================*/
         // Add back to regular speed and jump 
-
+        playerJumpPower = 1250;
         // Returns back to egular sprite
         GetComponent<SpriteRenderer>().color = Color.white;
     }
-
 }

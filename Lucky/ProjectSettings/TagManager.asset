@@ -7,6 +7,7 @@ TagManager:
   - EnergyPickup
   - Axe
   - Checkpoint
+  - Enemy
   layers:
   - Default
   - TransparentFX

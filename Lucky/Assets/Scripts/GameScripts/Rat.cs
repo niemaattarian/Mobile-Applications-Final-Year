@@ -4,8 +4,26 @@ using UnityEngine;
 
 public class Rat : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D col)
+    public int health = 40;
+    //public GameObject deathEffect;
+
+    public void TakeDamage (int damage)
     {
-        Health.playerHealth -= 5f;
+        health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
     }
+
+    void Die()
+    {
+        //Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+
+    // void OnTriggerEnter2D(Collider2D col)
+    // {
+    //     Health.playerHealth -= 5f;
+    // }
 }
