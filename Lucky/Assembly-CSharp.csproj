@@ -45,6 +45,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\Bullet.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Coin.cs" />
      <Compile Include="Assets\Scripts\GameScripts\EnemyGFX.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
      <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
@@ -52,6 +53,7 @@
      <Compile Include="Assets\Scripts\GameScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerSoundScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Rat.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\KeyPressScript.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />

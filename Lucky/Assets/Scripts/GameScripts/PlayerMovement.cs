@@ -87,6 +87,12 @@ public class PlayerMovement : MonoBehaviour
             PlayerSoundScript.PlaySound ("CheckpointCP");
             Destroy(other.gameObject);
         }
+
+        if(other.gameObject.CompareTag("Coins"))
+        {
+            PlayerSoundScript.PlaySound ("Coin");
+            Destroy(other.gameObject);
+        }
     }
   
     // Adapted from https://www.youtube.com/watch?v=0BrltbzgTYo
