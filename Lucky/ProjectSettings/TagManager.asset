@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnergyPickup
   - Axe
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
