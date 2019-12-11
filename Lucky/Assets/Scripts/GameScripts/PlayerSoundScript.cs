@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSoundScript : MonoBehaviour
 {
 
-    public static AudioClip playerWalkSound, playerJumpSound, playerWeaponEquip, playerEnergyPickup, gameCheckpoint, coinPickup;
+    public static AudioClip playerWalkSound, playerJumpSound, playerWeaponEquip, playerEnergyPickup, gameCheckpoint, coinPickup, shotgunSound, gunPickup;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -17,6 +17,8 @@ public class PlayerSoundScript : MonoBehaviour
         playerEnergyPickup = Resources.Load<AudioClip> ("EnergyPower");
         gameCheckpoint = Resources.Load<AudioClip> ("CheckpointCP");
         coinPickup = Resources.Load<AudioClip> ("Coin");
+        shotgunSound = Resources.Load<AudioClip> ("Shotgun");
+        gunPickup = Resources.Load<AudioClip> ("Gun");
 
         audioSrc = GetComponent<AudioSource> ();
     }
@@ -46,6 +48,12 @@ public class PlayerSoundScript : MonoBehaviour
                 break;
             case "Coin":
                 audioSrc.PlayOneShot (coinPickup);
+                break;
+            case "Shotgun":
+                audioSrc.PlayOneShot (shotgunSound);
+                break;
+            case "Gun":
+                audioSrc.PlayOneShot (gunPickup);
                 break;
         }
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 using Pathfinding;
 public class EnemyGFX : MonoBehaviour
 {
+    public int health = 20;
     public AIPath aIPath;
 
     // Update is called once per frame
@@ -19,4 +20,22 @@ public class EnemyGFX : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
+    public void TakeDamage (int damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        //Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 }
+
+
+
+

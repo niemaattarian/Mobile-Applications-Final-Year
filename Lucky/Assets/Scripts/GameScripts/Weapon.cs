@@ -16,6 +16,7 @@ public class Weapon : MonoBehaviour
     }
 
     void Shoot(){
+        PlayerSoundScript.PlaySound ("Shotgun");
         Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
     }
 }
