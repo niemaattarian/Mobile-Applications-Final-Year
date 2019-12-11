@@ -14,14 +14,15 @@ public class PlayerMovement : MonoBehaviour
     // Sprite rendering
     private SpriteRenderer renderer;
     private Sprite playerAxe;
+    private Sprite playerGun;
+
     public Animator playerAnim;
-    public GameObject playerObject;
+    //public GameObject playerObject;
    
     // Update is called once per frame
     void Update()
     {
         PlayerMove();
-    
     }
     
     void PlayerMove()
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         //PlayerSounds.PlaySound ("PlayerWalk");
         if (Input.GetButtonDown ("Jump"))
         {
-            if(isGrounded == true)
+            if(isGrounded)
             {
                 // Player Jumping sounds
                 PlayerSoundScript.PlaySound ("Playerjump");
@@ -103,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
             renderer = GetComponent<SpriteRenderer>();
             playerAxe = Resources.Load<Sprite> ("MC-axe");
             renderer.sprite = playerAxe;
-            playerAnim.SetTrigger("Swing");
+            //playerAnim.SetTrigger("AxeCollect");
         }
         
         if(other.gameObject.CompareTag("Checkpoint"))
@@ -126,6 +127,10 @@ public class PlayerMovement : MonoBehaviour
         {
             // Plays the sound for Checkpoint
             PlayerSoundScript.PlaySound ("Gun");
+            //GetComponent<GameObject>();
+            renderer = GetComponent<SpriteRenderer>();
+            playerGun = Resources.Load<Sprite> ("MC-SHOGUN");
+            renderer.sprite = playerGun;
             // Destroys the object once taken
             Destroy(other.gameObject);
         }
