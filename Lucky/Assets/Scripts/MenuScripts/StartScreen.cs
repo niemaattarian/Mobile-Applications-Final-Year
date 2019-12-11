@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ControlScene : MonoBehaviour {
+public class StartScene : MonoBehaviour {
 
 	public AudioClip sfxButton;
 	
@@ -19,10 +19,7 @@ public class ControlScene : MonoBehaviour {
 				Invoke("LoadScene",0.5f);
 				oneshotSfx = true;
 			}
-			
-			
 		}
-	
 	}
 	
 	void LoadScene()

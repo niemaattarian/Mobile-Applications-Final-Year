@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GameScripts\EnemyGFX.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
      <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\NextSceneScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerSoundScript.cs" />

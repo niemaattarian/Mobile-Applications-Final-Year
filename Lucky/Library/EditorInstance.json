@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"process_id" : 12327,
+=======
+	"process_id" : 15707,
+>>>>>>> cd47514c353ef07ac9cdf84825d14abdc835801d
 	"version" : "2019.2.8f1",
 	"app_path" : "/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Unity",
 	"app_contents_path" : "/home/niema/Unity/Hub/Editor/2019.2.8f1/Editor/Data"

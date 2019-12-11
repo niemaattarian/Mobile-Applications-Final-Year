@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer renderer;
     private Sprite playerAxe;
     public Animator playerAnim;
+    public GameObject playerObject;
    
     // Update is called once per frame
     void Update()
