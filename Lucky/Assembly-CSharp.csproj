@@ -44,19 +44,17 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Bullet.cs" />
-     <Compile Include="Assets\Fading.cs" />
-     <Compile Include="Assets\GroundCheck.cs" />
-     <Compile Include="Assets\NextSceneObject.cs" />
-     <Compile Include="Assets\PlayerAttack.cs" />
+  <ItemGroup>     <Compile Include="Assets\Exit.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Bear.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Coin.cs" />
      <Compile Include="Assets\Scripts\GameScripts\EnemyGFX.cs" />
      <Compile Include="Assets\Scripts\GameScripts\FinalSceneScript.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GroundCheck.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Health.cs" />
      <Compile Include="Assets\Scripts\GameScripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\GameScripts\NextSceneScript.cs" />
-     <Compile Include="Assets\Scripts\GameScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\GameScripts\PlayerSoundScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Rat.cs" />
@@ -66,9 +64,9 @@
      <Compile Include="Assets\Scripts\MenuScripts\KeyPressScript.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MusicValueChange.cs" />
-     <Compile Include="Assets\Scripts\MenuScripts\MuteSounds.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\OpenScene.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\StartScreen.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

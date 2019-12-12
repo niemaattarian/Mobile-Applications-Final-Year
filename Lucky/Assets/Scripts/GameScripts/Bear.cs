@@ -20,6 +20,7 @@ public class Bear : MonoBehaviour
     // Die method when health is 0
     void Die()
     {
+        PlayerSoundScript.PlaySound ("Growl");
         Destroy(gameObject);
     }
 }
