@@ -16,9 +16,24 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D (Collider2D hitInfo)
     {
         Rat rat = hitInfo.GetComponent<Rat>();
+        Wolf wolf = hitInfo.GetComponent<Wolf>();
+        Bear bear = hitInfo.GetComponent<Bear>();
         if(rat != null)
         {
+            PlayerSoundScript.PlaySound ("RatDeath");
             rat.TakeDamage(shotgundamage);
+        }
+        
+        if(wolf != null)
+        {
+            PlayerSoundScript.PlaySound ("DogBark");
+            wolf.TakeDamage(shotgundamage);
+        }
+
+        if(bear != null)
+        {
+            PlayerSoundScript.PlaySound ("Growl");
+            bear.TakeDamage(shotgundamage);
         }
         Destroy(gameObject);
     }

@@ -10,7 +10,8 @@ public class KillPlayer : MonoBehaviour
     {
         if(col.transform.CompareTag("Player"))
         {
-             col.transform.position = spawnPoint.position;
+            PlayerSoundScript.PlaySound ("PlayerDeath");
+            col.transform.position = spawnPoint.position;
         }
     }
 }

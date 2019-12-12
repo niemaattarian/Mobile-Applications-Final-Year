@@ -18,12 +18,6 @@ public class Bear : MonoBehaviour
 
     void Die()
     {
-        //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-
-    // void OnTriggerEnter2D(Collider2D col)
-    // {
-    //     Health.playerHealth -= 5f;
-    // }
 }

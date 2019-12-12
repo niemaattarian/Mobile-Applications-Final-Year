@@ -10,7 +10,7 @@ public class FinalSceneScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nextSceneLoad = SceneManager.GetActiveScene().buildIndex - 3;
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex - 1;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
