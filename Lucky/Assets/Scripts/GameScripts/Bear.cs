@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Bear : MonoBehaviour
 {
+    // Boss health
     public int health = 100;
-    //public GameObject deathEffect;
-
+    
+    // Take damage method from gun
     public void TakeDamage (int damage)
     {
         health -= damage;
@@ -16,6 +17,7 @@ public class Bear : MonoBehaviour
         }
     }
 
+    // Die method when health is 0
     void Die()
     {
         Destroy(gameObject);

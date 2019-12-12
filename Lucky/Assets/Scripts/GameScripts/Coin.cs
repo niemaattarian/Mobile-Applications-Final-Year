@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            // Score manager keeps track of the coins
             ScoreManager.instance.ChangeScore(coinValue);
         }
     }

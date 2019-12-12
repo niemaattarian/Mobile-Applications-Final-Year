@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    // Score manager keeps track of coin count and outputs it
     public void ChangeScore(int coinValue)
     {
         score += coinValue;

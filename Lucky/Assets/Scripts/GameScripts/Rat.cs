@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Rat : MonoBehaviour
 {
+    // Boss health
     public int health = 40;
-    //public GameObject deathEffect;
-
+    // Take damage method from gun
     public void TakeDamage (int damage)
     {
         health -= damage;
@@ -16,14 +16,9 @@ public class Rat : MonoBehaviour
         }
     }
 
+    // Die method when health is 0
     void Die()
     {
-        //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-
-    // void OnTriggerEnter2D(Collider2D col)
-    // {
-    //     Health.playerHealth -= 5f;
-    // }
 }

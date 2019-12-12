@@ -17,6 +17,7 @@ public class GroundCheck : MonoBehaviour
         
     }
 
+    // Checks if player is on the ground in order to jump
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Ground")

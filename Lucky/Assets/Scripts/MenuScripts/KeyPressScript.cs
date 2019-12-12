@@ -10,6 +10,7 @@ public class KeyPressScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Key press sounds
         keyPressSound = Resources.Load<AudioClip> ("KeyPress");
         
         audioSrc = GetComponent<AudioSource> ();
@@ -29,6 +30,7 @@ public class KeyPressScript : MonoBehaviour
         }
     }
 
+    // mute the volume button call
      public void Mute(){
         AudioListener.pause = !AudioListener.pause;
     }

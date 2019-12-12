@@ -12,6 +12,7 @@ public class PlayerSoundScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Loading audio clips of players, these can be found here https://opengameart.org/art-search-advanced?keys=sounds&title=&field_art_tags_tid_op=or&field_art_tags_tid=&name=&field_art_type_tid%5B%5D=9&field_art_type_tid%5B%5D=10&field_art_type_tid%5B%5D=7273&field_art_type_tid%5B%5D=14&field_art_type_tid%5B%5D=12&field_art_type_tid%5B%5D=13&field_art_type_tid%5B%5D=11&field_art_licenses_tid%5B%5D=17981&field_art_licenses_tid%5B%5D=2&field_art_licenses_tid%5B%5D=17982&field_art_licenses_tid%5B%5D=3&field_art_licenses_tid%5B%5D=6&field_art_licenses_tid%5B%5D=5&field_art_licenses_tid%5B%5D=10310&field_art_licenses_tid%5B%5D=4&field_art_licenses_tid%5B%5D=8&field_art_licenses_tid%5B%5D=7&sort_by=score&sort_order=DESC&items_per_page=24&Collection=
         playerWalkSound = Resources.Load<AudioClip> ("PlayerWalk");
         playerJumpSound = Resources.Load<AudioClip> ("Playerjump");
         playerWeaponEquip = Resources.Load<AudioClip> ("WeaponEquip");
@@ -34,6 +35,7 @@ public class PlayerSoundScript : MonoBehaviour
         
     }
 
+    // Plays each sound clip based on specific action
      public static void PlaySound (string clip){
         switch(clip) {
             case "PlayerWalk":

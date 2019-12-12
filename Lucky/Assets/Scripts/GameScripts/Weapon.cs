@@ -10,12 +10,15 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Shooting the gun when mouse is pressed
           if(Input.GetButtonDown("Fire1")){
               Shoot();
           }
     }
 
+    // Shoot method
     void Shoot(){
+        // gun sound
         PlayerSoundScript.PlaySound ("Shotgun");
         Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
     }
